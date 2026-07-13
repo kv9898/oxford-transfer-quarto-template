@@ -8,13 +8,13 @@ A Quarto PDF adaptation of the Oxford Transfer of Status LaTeX template by
 Use the repository as a template to create an example document:
 
 ```bash
-quarto use template kv9898/oxford-transfer
+quarto use template kv9898/oxford-transfer-quarto-template
 ```
 
 Or add only the extension to an existing project:
 
 ```bash
-quarto add kv9898/oxford-transfer
+quarto add kv9898/oxford-transfer-quarto-template
 ```
 
 ## Using
