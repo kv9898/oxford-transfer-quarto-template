@@ -1,0 +1,47 @@
+% Core styling adapted from the standalone Oxford Transfer of Status template.
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage[title,titletoc]{appendix}
+
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
+
+\providecommand{\OxfordHeaderLeft}{University of Oxford}
+\providecommand{\OxfordHeaderRight}{Transfer of Status}
+\providecommand{\OxfordFooterLeft}{}
+\providecommand{\OxfordFooterCentre}{}
+\providecommand{\OxfordFooterRight}{\thepage}
+\providecommand{\OxfordHeadRuleWidth}{0.4pt}
+\providecommand{\OxfordFootRuleWidth}{0.4pt}
+
+\fancypagestyle{oxfordtransfer}{%
+  \fancyhf{}
+  \fancyhead[L]{\OxfordHeaderLeft}
+  \fancyhead[R]{\OxfordHeaderRight}
+  \fancyfoot[L]{\OxfordFooterLeft}
+  \fancyfoot[C]{\OxfordFooterCentre}
+  \fancyfoot[R]{\OxfordFooterRight}
+  \renewcommand{\headrulewidth}{\OxfordHeadRuleWidth}
+  \renewcommand{\footrulewidth}{\OxfordFootRuleWidth}
+}
+\pagestyle{oxfordtransfer}
+
+% Apply the same furniture to chapter-opening and contents pages.
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{\OxfordHeaderLeft}
+  \fancyhead[R]{\OxfordHeaderRight}
+  \fancyfoot[L]{\OxfordFooterLeft}
+  \fancyfoot[C]{\OxfordFooterCentre}
+  \fancyfoot[R]{\OxfordFooterRight}
+  \renewcommand{\headrulewidth}{\OxfordHeadRuleWidth}
+  \renewcommand{\footrulewidth}{\OxfordFootRuleWidth}
+}
+
+\titleformat{\chapter}[hang]
+  {\normalfont\LARGE}
+  {\thechapter\,$\vert$}
+  {0.75em}
+  {}
+\titlespacing*{\chapter}{0pt}{-20pt}{24pt}

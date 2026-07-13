@@ -9,5 +9,6 @@
 *.lot
 *.lol
 *.tex
+!_extensions/oxford-transfer/*.tex
 .quarto/
 README_files/

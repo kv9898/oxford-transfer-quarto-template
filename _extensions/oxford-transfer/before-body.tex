@@ -1,0 +1,66 @@
+$if(running-header)$
+\renewcommand{\OxfordHeaderLeft}{$if(header-left)$$header-left$$else$University of Oxford$endif$}
+\renewcommand{\OxfordHeaderRight}{$if(header-right)$$header-right$$else$$if(status)$$status$$else$Transfer of Status$endif$$endif$}
+$else$
+\renewcommand{\OxfordHeaderLeft}{}
+\renewcommand{\OxfordHeaderRight}{}
+\renewcommand{\OxfordHeadRuleWidth}{0pt}
+$endif$
+
+\renewcommand{\OxfordFooterLeft}{$if(footer-left)$$footer-left$$endif$}
+$if(minimal-footer)$
+\renewcommand{\OxfordFooterLeft}{}
+\renewcommand{\OxfordFooterCentre}{\thepage}
+\renewcommand{\OxfordFooterRight}{}
+\renewcommand{\OxfordFootRuleWidth}{0pt}
+$endif$
+$if(title)$
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+\vspace*{-1cm}
+
+\parbox{0.9\textwidth}{\centering\LARGE $title$\par}
+$if(subtitle)$
+\vspace{0.6cm}
+{\Large $subtitle$\par}
+$endif$
+
+\vspace{1.2cm}
+{\Large $if(status)$$status$$else$Transfer of Status$endif$\par}
+
+\vspace{1.4cm}
+$if(crest)$
+\IfFileExists{$crest$}{%
+  \includegraphics[width=0.36\columnwidth]{$crest$}\par
+}{\vspace{0.36\columnwidth}}
+$endif$
+
+\vspace{1cm}
+$if(authors)$
+{\Large $for(authors)$$it.name.literal$$sep$ \\ $endfor$\par}
+\vspace{0.4cm}
+$endif$
+$if(supervisor)$
+{\large $if(supervisor-label)$$supervisor-label$$else$Supervisor$endif$: $for(supervisor)$$supervisor$$sep$ \\ $endfor$\par}
+\vspace{1.8cm}
+$endif$
+$if(department)$
+{\large $department$\par}
+$endif$
+$if(college)$
+{\large $college$\par}
+\vspace{0.4cm}
+$endif$
+{\large University of Oxford\par}
+$if(date)$
+\vspace{1.4cm}
+{\large $date$\par}
+$endif$
+\end{titlepage}
+$endif$
+
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+\pagenumbering{arabic}
