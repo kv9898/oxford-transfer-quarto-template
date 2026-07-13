@@ -1,0 +1,13 @@
+*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.lol
+*.tex
+.quarto/
+README_files/
