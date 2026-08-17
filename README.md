@@ -67,7 +67,7 @@ the Oxford crest.
 
 ## Attribution and licence
 
-The original template is by Joseph Rowell and Frank Fu and is licensed under
+The [original template](https://www.overleaf.com/latex/templates/oxford-transfer-of-status-template/nkbxmjcdhggb) is by Joseph Rowell and Frank Fu and is licensed under
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
 This repository is a modified Quarto adaptation by Dianyi Yang and is released
 under the same licence. See [ATTRIBUTION.md](ATTRIBUTION.md) and
