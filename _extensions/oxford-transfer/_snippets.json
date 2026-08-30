@@ -1,5 +1,5 @@
 {
-  "Oxford Transfer document": {
+  "Document metadata": {
     "prefix": "document",
     "body": [
       "---",
@@ -22,7 +22,7 @@
     ],
     "description": "Insert front matter for an Oxford Transfer of Status report."
   },
-  "Oxford Transfer layout options": {
+  "Layout options": {
     "prefix": "layout",
     "body": [
       "format:",
@@ -40,7 +40,7 @@
     ],
     "description": "Insert configurable header, footer, and content-list options for the Oxford Transfer PDF format."
   },
-  "Oxford Transfer crest": {
+  "Crest path": {
     "prefix": "crest",
     "body": [
       "format:",
