@@ -1,0 +1,50 @@
+{
+  "Oxford Transfer document": {
+    "prefix": "oxford-transfer",
+    "body": [
+      "---",
+      "title: \"${1:Project title}\"",
+      "author: \"${2:Candidate name}\"",
+      "supervisor: \"${3:Professor First Supervisor}\"",
+      "college: \"${4:College name}\"",
+      "department: \"${5:Department of Politics and International Relations}\"",
+      "status: \"${6:Transfer of Status}\"",
+      "date: \"${7:Month Year}\"",
+      "abstract: |",
+      "  ${8:A short abstract for the report.}",
+      "keywords: [${9:keyword one}, ${10:keyword two}]",
+      "format:",
+      "  oxford-transfer-pdf:",
+      "    number-sections: true",
+      "---",
+      "",
+      "$0"
+    ],
+    "description": "Insert front matter for an Oxford Transfer of Status report."
+  },
+  "Oxford Transfer layout options": {
+    "prefix": "oxford-transfer-layout",
+    "body": [
+      "format:",
+      "  oxford-transfer-pdf:",
+      "    running-header: ${1|true,false|}",
+      "    minimal-footer: ${2|false,true|}",
+      "    header-left: \"${3:University of Oxford}\"",
+      "    header-right: \"${4:Transfer of Status}\"",
+      "    footer-left: \"${5}\"",
+      "    supervisor-label: \"${6:Supervisor}\"",
+      "    lof: ${7|true,false|}",
+      "    lot: ${8|true,false|}",
+      "    lol: ${9|false,true|}",
+      "    listings: ${10|false,true|}"
+    ],
+    "description": "Insert configurable header, footer, and content-list options for the Oxford Transfer PDF format."
+  },
+  "Oxford Transfer crest": {
+    "prefix": "oxford-transfer-crest",
+    "body": [
+      "crest: ${1:_extensions/oxford-transfer/figures/beltcrest.pdf}"
+    ],
+    "description": "Insert the path to an authorised local copy of the Oxford crest."
+  }
+}
