@@ -1,9 +1,6 @@
 ---
 title: "Interesting Scientific Title That Encompasses your DPhil Subject"
 author: "Your Name"
-supervisor: "Your Supervisor"
-college: "St. Hugh's College"
-status: "Transfer of Status"
 date: "September 2023"
 abstract: |
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
@@ -30,6 +27,9 @@ abstract: |
 keywords: [Keyword1, Keyword2, Keyword3]
 format:
   oxford-transfer-pdf:
+    supervisor: "Your Supervisor"
+    college: "St. Hugh's College"
+    status: "Transfer of Status"
     running-header: false
     minimal-footer: true
     toc-title: "Table of Contents"

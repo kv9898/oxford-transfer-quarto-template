@@ -23,16 +23,16 @@ quarto add kv9898/oxford-transfer-quarto-template
 ---
 title: "The title of the DPhil project"
 author: "Candidate Name"
-supervisor: "Professor First Supervisor"
-college: "College Name"
-department: "Department of Politics and International Relations"
-status: "Transfer of Status"
 date: "July 2026"
 abstract: |
   A short abstract for the report.
 keywords: [central banking, quantitative easing, fiscal indemnities]
 format:
   oxford-transfer-pdf:
+    supervisor: "Professor First Supervisor"
+    college: "College Name"
+    department: "Department of Politics and International Relations"
+    status: "Transfer of Status"
     number-sections: true
 ---
 ```
@@ -42,6 +42,12 @@ The format supports `header-left`, `header-right`, `footer-left`, and
 `minimal-footer: true` to show only a centred page number without a rule. Lists
 of figures and tables are controlled by `lof` and `lot`; set `lol: true` together
 with `listings: true` to include a list of listings.
+
+If you use [Quarto Wizard](https://m.canouil.dev/quarto-wizard/), the bundled
+schema provides completion, hover documentation, and diagnostics for these
+format options. The bundled snippets use the namespaced prefixes
+`oxford-transfer:document`, `oxford-transfer:layout`, and
+`oxford-transfer:crest`.
 
 ## Optional crest
 
