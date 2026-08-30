@@ -1,0 +1,61 @@
+# Schema for the oxford-transfer extension
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v2/extension-schema.json
+
+formats:
+  oxford-transfer-pdf:
+    supervisor:
+      type:
+        - string
+        - array
+      description: "Supervisor name, or a list of supervisor names, shown on the title page."
+      examples:
+        - "Professor First Supervisor"
+      items:
+        type: string
+    supervisor-label:
+      type: string
+      default: "Supervisor"
+      description: "Label placed before the supervisor name or names on the title page."
+    college:
+      type: string
+      description: "Oxford college shown on the title page."
+      examples:
+        - "St Hugh's College"
+    department:
+      type: string
+      description: "Department or faculty shown on the title page."
+      examples:
+        - "Department of Politics and International Relations"
+    status:
+      type: string
+      default: "Transfer of Status"
+      description: "Assessment status shown on the title page and used as the default right-hand running header."
+    crest:
+      type: string
+      description: "Path to an authorised local copy of the Oxford crest; the title page remains usable when the file is absent."
+      completion:
+        type: file
+        extensions:
+          - .pdf
+    running-header:
+      type: boolean
+      default: true
+      description: "Whether to display running headers and the standard footer rule."
+    minimal-footer:
+      type: boolean
+      default: false
+      description: "Whether to use only a centred page number without a footer rule."
+    header-left:
+      type: string
+      default: "University of Oxford"
+      description: "Text displayed on the left-hand side of the running header."
+    header-right:
+      type: string
+      description: "Text displayed on the right-hand side of the running header; defaults to the status value."
+    footer-left:
+      type: string
+      description: "Optional text displayed on the left-hand side of the standard footer."
+    lol:
+      type: boolean
+      default: false
+      description: "Whether to include a list of listings; enable listings as well when using this option."
